@@ -1,0 +1,21 @@
+<div>
+    <h1>
+      {{title}}
+    </h1>
+    <nav class="navbar navbar-expand-sm navbar-light" *ngIf='users && users.length'>
+        <div>
+          <ul class="navbar-nav">
+            <li [class.active]='selectedUser && user.id === selectedUser.id'
+                class="nav-item" 
+                *ngFor='let user of users' >
+              <a class="nav-link" (click)='selectUser(user)' href="#">{{user.name | firstName}} </a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <div class="text-center" *ngIf='!users || !users.length'>
+      <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+  </div>

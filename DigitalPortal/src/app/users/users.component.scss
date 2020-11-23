@@ -1,0 +1,19 @@
+.navbar{
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 25px;
+
+}
+.navbar-nav {  
+    .active{
+        background-color: #ed7d31 !important;
+    }
+    .nav-item {
+        background-color: #5b9bd5;
+        margin: 1px;
+        border: #41719c solid 2px;
+        a {
+            color: white;
+        }
+    }
+}

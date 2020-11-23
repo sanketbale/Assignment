@@ -1,0 +1,46 @@
+.card{
+    border: none;
+
+    .app-heading-container{
+        background-color: #5b9bd5;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        border: #41719c solid 2px;
+    }
+
+    button {
+        font-size: 80px;
+        line-height: 40px;
+        color: #5b9bd5;
+        box-shadow: none !important;
+        font-weight: 900;
+        height: 50px;
+        width: 82px;
+    }
+    .card-header{
+        background-color: white;
+        padding: 0;
+        border: none;
+        
+        span {
+            color: white;
+        }
+    }
+    .card-body{
+        padding: 0;
+        .app-comment{
+            background-color: #ed7d31 !important;
+            color: white;
+            border: #41719c solid 2px;
+            margin-bottom: 5px;
+        }
+    }
+
+}
+.app-load-more-button{
+    background-color: #5b9bd5;
+    border: #41719c solid 2px;
+    color: white;
+    padding: 5px 20px;
+}

@@ -1,0 +1,6 @@
+<div class='container'>
+  <app-users (selectedUserEvent)="loadPostsForUser($event)"></app-users>
+  <section *ngIf="selectedUser" >
+    <app-posts [user]="selectedUser"></app-posts>
+  </section>
+</div>
