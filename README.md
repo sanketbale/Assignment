@@ -5,7 +5,7 @@ Assignment
 ```bash
 npm install 
 node lodash_sort.js
-vanillajs_sort.js
+node vanillajs_sort.js
 ```
 
 ##  Portal : 
