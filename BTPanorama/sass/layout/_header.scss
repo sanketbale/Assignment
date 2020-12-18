@@ -1,0 +1,76 @@
+
+.header {
+    overflow: hidden;
+    background-color: #ffffff;
+    height: 50px;
+    border: solid 1px #ededed;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 2;
+
+    .logo {
+        float: left;
+        text-align: center;
+        text-decoration: none;
+
+        img {
+            padding: 15px;
+        }
+
+    }
+
+    .header-right {
+        float: right;
+        width: 300px;
+
+        .adviser-box {
+            float: left;
+            height: $header-height;
+            padding: 11px 15px 12px 15px;
+            border-left: solid 1px $border-color;
+
+            .adviser-info{
+                font-size: 12px;
+                line-height: 1.17;
+                letter-spacing: normal;
+                text-align: left;
+            }
+
+            .adviser-name{
+               @extend .adviser-info;
+               color: #007ead;
+               font-size: 14px;
+            }
+        }
+        
+        .settings {
+            height: $header-height;
+            width: $header-height;
+            float: right;
+
+            img {
+                height: $header-height;
+                width: $header-height;
+                padding: 17px 15px 12px 15px;
+                content: url('/assets/icon-settings.svg');
+
+                &:hover {
+                    content: url('/assets/icon-settings-active.svg');
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .header-right {
+        float: none;
+    }
+}

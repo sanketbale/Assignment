@@ -1,0 +1,14 @@
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float:right;
+}
+
+@mixin circle($r : 45px ,$thickness : 5px ,$fill:black ){
+    height: $r;
+    width: $r;
+    border: $thickness solid $fill;
+    border-radius: $r;
+}

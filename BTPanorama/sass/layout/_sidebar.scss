@@ -1,0 +1,57 @@
+
+.sidebar {
+    height: 100%;
+    width: $sidebar-width;
+    position: fixed;
+    z-index: 1;
+    top: $header-height;
+    left: 0;
+    background-image: linear-gradient(to bottom, #00232b, #786c82);
+    overflow-x: hidden;
+    a{
+        height: 50px;
+        width: 45px;
+        display: block;
+        padding: 13px 12px 12px 8px;
+        margin-left: 5px;
+        border-left: solid 0px #00afd7;
+
+        &.active{
+            border-width:5px;
+            margin-left: 0;
+        }
+
+        &:hover {
+            border-width:5px;
+            margin-left: 0;
+        }
+    }
+
+    @each $item in $sidebar-items {
+        .icon-#{$item} {
+            width: 25px;
+            height:25px;
+            display: block;
+            content: url('/assets/icon-#{$item}.svg');
+
+            &:hover {
+                content: url('/assets/icon-#{$item}-active.svg');
+            }
+
+            &.active{
+                content: url('/assets/icon-#{$item}-active.svg');
+            }
+        } 
+    }
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}

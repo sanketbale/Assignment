@@ -1,0 +1,96 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700';
+@import 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap';
+@import 'https://www.bt.com.au/etc/designs/btfg-bt/fonts/helvetica_neue/helvetica_neue_lt_light.woff2';	
+@import 'https://www.bt.com.au/etc/designs/btfg-bt/fonts/helvetica_neue/helvetica_neue_lt_medium.woff2';		
+@import 'https://www.bt.com.au/etc/designs/btfg-bt/fonts/helvetica_neue/helvetica_neue_lt_thin.woff2';
+
+
+@font-face{
+	font-family:"Helvetica Neue LT Thin";
+	src:url(/fonts/helvetica_neue_lt_thin.eot?#iefix);
+	src:url(/fonts/helvetica_neue_lt_thin.eot?#iefix)format("eot"),
+	url(/fonts/helvetica_neue_lt_thin.woff2)format("woff2"),
+	url(/fonts/helvetica_neue_lt_thin.woff)format("woff"),
+	url(/fonts/helvetica_neue_lt_thin.ttf) 
+	format("truetype"),url(../fonts/helvetica_neue/helvetica_neue_lt_thin.svg) 
+	format("svg")
+}
+
+@mixin font($a : none) {
+    @if $a==bold {
+        font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+        font-weight: 600;
+        font-stretch: normal;
+    }
+    @else if $a==medium {
+        font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+        font-weight: 400;
+        font-stretch: normal;
+    }
+    @else if $a==light {
+        font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+        font-weight: 300;
+        font-stretch: normal;
+    }  
+    @else if $a==thin {
+        font-family: "HelveticaNeueThin", "HelveticaNeue-Thin", "Helvetica Neue Thin", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Arial", sans-serif;
+        font-weight: 100;
+        font-stretch: normal;
+    }
+    @else {
+        font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+        font-weight: 400;
+        font-stretch: normal;
+    }
+}
+
+@mixin font-values($a : none) {
+    @if $a==regular {
+        font-family: "RobotoCondensed","Roboto Condensed","Roboto" ,sans-serif;
+        font-stretch: normal;
+    }
+    @else if $a==light {
+        font-family: "RobotoCondensed","Roboto Condensed","Roboto" ,sans-serif;
+        font-weight: 300;
+        font-stretch: normal;
+    }
+    @else {
+        font-family: "RobotoCondensed","Roboto Condensed","Roboto" ,sans-serif;
+        font-stretch: normal;
+    }
+}
+
+.heading-modal{
+    font-size: $heading-modal-font-size;
+    color: $heading-modal-color;
+    @include font('light');
+}
+
+.heading {
+    font-size: $heading-font-size;
+    color: $heading-color;
+    @include font('regular');
+}
+
+.heading-section{
+    font-size: $heading-section-font-size;
+    color: $heading-section-color;
+    @include font('regular');
+}
+
+.label-bold {
+    font-size: 14px;
+    @include font('bold');
+}
+
+.label-regular {
+    font-size:12px;
+    @include font('regular');
+}
+
+.link{
+    font-size: $links-font-size;
+    color: $links-color;
+    @include font('regular');
+}

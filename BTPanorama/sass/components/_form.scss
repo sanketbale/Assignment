@@ -1,0 +1,184 @@
+.form-item {
+    margin-left: 30px;
+
+    &.dropdown {
+        input {
+            width: 220px;
+            height: 32px;
+            padding: 0 0 0 15px;
+            border-radius: 3px 0 0 3px;
+            border: solid 1px #a1acb4;
+            border-right: 0;
+            background-color: #ffffff;
+        }
+
+        span {
+            &.add-on {
+                width: 40px;
+                height: 32px;
+                padding: 15px 20px;
+                border-radius: 0 3px 3px 0;
+                border: solid 1px #a1acb4;
+                border-left: solid 1px #a1acb4;
+                background-color: #fafafa;
+                float: right;
+                cursor: pointer;
+
+                img {
+                    transform: translate(-50%, -50%);
+
+                    &.open {
+                        transform: rotate(180deg) translate(50%, 50%);
+                        transition: transform 0.5s linear;
+                    }
+
+                    &.closed {
+                        transition: transform 0.5s linear;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    &.date-range {
+
+        input {
+            width: 110px;
+            height: 32px;
+            padding: 0 0 0 15px;
+            border: solid 1px #a1acb4;
+            background-color: #ffffff;
+
+            &.from {
+                border-left: 0;
+                border-right: 0;
+            }
+
+            &.to {
+                border-left: 0;
+                border-radius: 0 3px 3px 0;
+            }
+        }
+
+        span {
+            &.add-on {
+                width: 40px;
+                height: 32px;
+                padding: 15px 20px;
+                border: solid 1px #a1acb4;
+                border-left: solid 1px #a1acb4;
+                background-color: #fafafa;
+                cursor: pointer;
+            }
+
+            &.right {
+                border-radius: 0 3px 3px 0;
+                float: right;
+            }
+
+            &.left {
+                border: solid 1px #a1acb4;
+                border-radius: 3px 0 0 3px;
+                float: left;
+            }
+
+            img {
+                transform: translate(-50%, -50%);
+            }
+
+        }
+    }
+
+    &.toggle {
+        .item {
+            width: 69px;
+            height: 32px;
+            padding: 6.5px 20px;
+            border-radius: 0 3px 3px 0;
+            background-color: #ffffff;
+            float: left;
+            border: solid 1px #d9d9d9;
+            @include font('regular');
+            font-size: 14px;
+            color: #48525a;
+            cursor: pointer;
+
+            &:first-of-type {
+                border-radius: 3px 0 0 3px;
+                border-right: 0;
+            }
+
+            &.active {
+                border: solid 2px #00232b;
+                color: #00232b;
+                font-weight: bold;
+            }
+        }
+    }
+
+    &.checkbox {
+        display: block;
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 17px;
+            width: 17px;
+            border-radius: 2px;
+            border: solid 1px #949494;
+            background-color: #ffffff;
+        }
+
+        &:hover input~.checkmark {
+            border: solid 1px #0079a2;
+            background-color: #00afd7;        }
+
+        input:checked~.checkmark {
+            border: solid 1px #0079a2;
+            background-color: #007ead;
+        }
+
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        input:checked~.checkmark:after {
+            display: block;
+        }
+
+        .checkmark:after {
+            left: 5px;
+            top: 1px;
+            width: 3px;
+            height: 8px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+
+}

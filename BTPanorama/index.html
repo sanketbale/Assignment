@@ -1,0 +1,387 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>BT Panorama</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="#default" class="logo"><img src="/assets/logo-btpanorama.svg" alt="logo-btpanorama"></a>
+        <div class="header-right">
+            <div class="adviser-box">
+                <p class="label-bold adviser-name">Name Adviser</p>
+                <p class="label-regular adviser-info">Adviser · 123456789</p>
+            </div>
+            <a class="settings" href="#settings"><img alt="icon-settings"></a>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <a href="#home"><img class="icon-home" alt="icon-home"></a>
+        <a class="active" href="#client"><img class="icon-client active" alt="icon-client"></a>
+        <a href="#tracking"><img class="icon-tracking" alt="icon-tracking"></a>
+        <a href="#business"><img class="icon-business" alt="icon-business"></a>
+        <a href="#investments"><img class="icon-investments" alt="icon-investments"></a>
+        <a href="#market-data"><img class="icon-market-data" alt="icon-market-data"></a>
+    </div>
+    <div class="main-container">
+
+
+        <div class="subheader">
+            <div class="subheader-left">
+                <p class="label-bold">Beechams Investment Wrap
+                </p>
+                <p class="label-regular">123456789 • Individual
+                </p>
+            </div>
+            <div class="subheader-right">
+                <p class="label-regular portfolio-value-label">Portfolio value as of today</p>
+                <p class="label-regular portfolio-value">$416,400.00</p>
+            </div>
+        </div>
+
+        <div class="reports-section">
+            <!-- <div id="hamburger-button">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div> -->
+            <!-- Section Header -->
+            <section>
+                <div class="hamburger-menu">
+                    <img src="/assets/icon-hamburger.svg" alt="icon-hamburger">
+                </div>
+                <span class="title">Reports</span>
+                <div class="dropdown form-item">
+                    <input type="text" placeholder="I would like to …">
+                    <span class="add-on"><img src="/assets/icon-chevron-down.svg" alt="icon-chevron-down"
+                            class="closed"></span>
+                    <!-- <div class="options">
+            <div class="item ">Item 2</div>
+            <div class="item ">Item 3</div>
+            <div class="item ">Item 4</div>
+            <div class="item ">Select Item</div>
+             </div> -->
+                </div>
+            </section>
+
+            <!-- Quick preferences -->
+            <section class="quick-preferences">
+                <span class="title-section float-left">Quick preferences</span>
+                <div class="float-left">
+                    <div class="dropdown form-item">
+                        <input type="text" placeholder="Last 12 months">
+                        <span class="add-on">
+                            <img src="/assets/icon-chevron-down.svg" alt="icon-chevron-down" class="closed"></span>
+                    </div>
+                </div>
+                <div class="float-left">
+                    <div class="date-range form-item">
+                        <span class="add-on left">
+                            <img src="/assets/icon-calendar.svg" alt="icon-calendar" class="closed"></span>
+                        <input type="text" class="from float-left" placeholder="29 Aug 2017">
+                        <span class="add-on float-left">
+                            <img src="/assets/icon-tool-arrow-right.svg" alt="icon-calendar" class="closed"></span>
+                        <input type="text" class="to" placeholder="29 Aug 2017">
+                    </div>
+                </div>
+                <div class="float-left">
+                    <div class="toggle form-item">
+                        <span class="item active">PDF</span>
+                        <span class="item">CSV</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Report packs -->
+            <section class="report-packs">
+                <span class="title">Report packs</span>
+                <div class="row packs">
+                    <div class="column">
+                        <div class="card pack">
+                            <div class="side">
+                                <span class="card-heading">Summary pack</span>
+                                <div class="card-body">
+                                    Portfolio valuation, Asset allocation,
+                                    Account performance and Portfolio performance
+                                </div>
+                            </div>
+                            <div class="side back">
+                                <span class="card-heading">Summary pack</span>
+                                <span class="card-subheading">selected</span>
+                                <span class="close"><img src="/assets/icon-cancel-hover.svg" alt="icon-calendar"
+                                        class="closed">Close pack</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card pack">
+                            <div class="side">
+                                <span class="card-heading">Tax pack</span>
+                                <div class="card-body">
+                                    Portfolio valuation, Asset allocation,
+                                    Account performance and Portfolio performance
+                                </div>
+                            </div>
+                            <div class="side back">
+                                <span class="card-heading">Tax pack</span>
+                                <span class="card-subheading">selected</span>
+                                <span class="close"><img src="/assets/icon-cancel-hover.svg" alt="icon-calendar"
+                                        class="closed">Close pack</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card pack">
+                            <div class="side">
+                                <span class="card-heading">Really long
+                                    name pack</span>
+                                <div class="card-body">
+                                    Portfolio valuation, Asset allocation,
+                                    Account performance and Portfolio performance
+                                </div>
+                            </div>
+                            <div class="side back">
+                                <span class="card-heading">Really long
+                                    name pack</span>
+                                <span class="card-subheading">selected</span>
+                                <span class="close"><img src="/assets/icon-cancel-hover.svg" alt="icon-calendar"
+                                        class="closed">Close pack</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card pack">
+                            <div class="side">
+                                <span class="card-heading">This is an extremely long
+                                    name pack</span>
+                                <div class="card-body">
+                                    Portfolio valuation, Asset allocation,
+                                    Account performance and Portfolio performance
+                                </div>
+                            </div>
+                            <div class="side back">
+                                <span class="card-heading">This is an extremely long
+                                    name pack</span>
+                                <span class="card-subheading">selected</span>
+                                <span class="close"><img src="/assets/icon-cancel-hover.svg" alt="icon-calendar"
+                                        class="closed">Close pack</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pack-details-table">
+                    <div class="table-header">
+                        <div class="table-column"><label class="checkbox form-item">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>Reports</div>
+                        <div class="table-column">At a / Date range</div>
+                        <div class="table-column">Target weight %</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-column">
+
+                            <span><label class="checkbox form-item">
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>Reports</span>
+                        </div>
+                        <div class="table-column">
+                            <div class="date-range form-item">
+                                <span class="add-on left">
+                                    <img src="/assets/icon-calendar.svg" alt="icon-calendar" class="closed"></span>
+                                <input type="text" class="to float-left" placeholder="29 Aug 2017">
+                            </div>
+                        </div>
+                        <div class="table-column">
+                            <div class="dropdown form-item">
+                                <input type="text" placeholder="Estimated gain/loss">
+                                <span class="add-on">
+                                    <img src="/assets/icon-chevron-down.svg" alt="icon-chevron-down"
+                                        class="closed"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-column"><span><label class="checkbox form-item">
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>Asset allocation</span></div>
+                        <div class="table-column">
+                            <div class="date-range form-item">
+                                <span class="add-on left">
+                                    <img src="/assets/icon-calendar.svg" alt="icon-calendar" class="closed"></span>
+                                <input type="text" class="to float-left" placeholder="29 Aug 2017">
+                            </div>
+                        </div>
+                        <div class="table-column">
+                            <div class="dropdown form-item">
+                                <input type="text" placeholder="By asset class">
+                                <span class="add-on">
+                                    <img src="/assets/icon-chevron-down.svg" alt="icon-chevron-down"
+                                        class="closed"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-column"><span><label class="checkbox form-item">
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>Account performance</span></div>
+                        <div class="table-column">
+                            <div class="date-range form-item">
+                                <span class="add-on left">
+                                    <img src="/assets/icon-calendar.svg" alt="icon-calendar" class="closed"></span>
+                                <input type="text" class="from float-left" placeholder="29 Aug 2017">
+                                <span class="add-on float-left">
+                                    <img src="/assets/icon-tool-arrow-right.svg" alt="icon-calendar"
+                                        class="closed"></span>
+                                <input type="text" class="to" placeholder="29 Aug 2017">
+                            </div>
+                        </div>
+                        <div class="table-column">
+                            <div class="dropdown form-item">
+                                <input type="text" placeholder="No benchmarks selected">
+                                <span class="add-on">
+                                    <img src="/assets/icon-chevron-down.svg" alt="icon-chevron-down"
+                                        class="closed"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-column"><span><label class="checkbox form-item">
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>Portfolio performance</span></div>
+                        <div class="table-column">
+                            <div class="date-range form-item">
+                                <span class="add-on left">
+                                    <img src="/assets/icon-calendar.svg" alt="icon-calendar" class="closed"></span>
+                                <input type="text" class="from float-left" placeholder="29 Aug 2017">
+                                <span class="add-on float-left">
+                                    <img src="/assets/icon-tool-arrow-right.svg" alt="icon-calendar"
+                                        class="closed"></span>
+                                <input type="text" class="to" placeholder="29 Aug 2017">
+                            </div>
+                        </div>
+                        <div class="table-column">
+                            <div class="dropdown form-item">
+                                <input type="text" placeholder="No benchmarks selected">
+                                <span class="add-on">
+                                    <img src="/assets/icon-chevron-down.svg" alt="icon-chevron-down"
+                                        class="closed"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-column"><span><label class="checkbox form-item">
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>Portfolio movement</span></div>
+                        <div class="table-column">
+                            <div class="date-range form-item">
+                                <span class="add-on left">
+                                    <img src="/assets/icon-calendar.svg" alt="icon-calendar" class="closed"></span>
+                                <input type="text" class="from float-left" placeholder="29 Aug 2017">
+                                <span class="add-on float-left">
+                                    <img src="/assets/icon-tool-arrow-right.svg" alt="icon-calendar"
+                                        class="closed"></span>
+                                <input type="text" class="to" placeholder="29 Aug 2017">
+                            </div>
+                        </div>
+                        <div class="table-column">
+
+                        </div>
+                    </div>
+
+
+                    <div class="table-row">
+                        <div class="table-column"><span><label class="checkbox form-item">
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>Transaction history cash statement</span></div>
+                        <div class="table-column">
+                            <div class="date-range form-item">
+                                <span class="add-on left">
+                                    <img src="/assets/icon-calendar.svg" alt="icon-calendar" class="closed"></span>
+                                <input type="text" class="from float-left" placeholder="29 Aug 2017">
+                                <span class="add-on float-left">
+                                    <img src="/assets/icon-tool-arrow-right.svg" alt="icon-calendar"
+                                        class="closed"></span>
+                                <input type="text" class="to" placeholder="29 Aug 2017">
+                            </div>
+                        </div>
+                        <div class="table-column">
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Report packs -->
+            <section class="individual-reports">
+                <span class="title">Individual reports</span>
+                <div class="container">
+                    <div class="circle float-left individual-report closed" data-target="expand-box-1">
+                        <img src="/assets/icon-tool-arrow-right.svg" alt="icon-tool-arrow-right">
+                    </div>
+                    <p class="title">Portfolio reports</p>
+                    <p class="subtitle">Portfolio valuation, Asset allocation, Account performance, Portfolio
+                        performance, Portfolio, Portfolio movement &amp; Transaction history cash statement</p>
+                    <p id="expand-box-1" class="expand-box closed">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Vivamus lacinia ante sit amet augue placerat sollicitudin non sit amet nisi. Quisque
+                        aliquet bibendum eros, a porta elit auctor sed. Curabitur posuere eleifend dignissim. Donec
+                        vitae commodo mi.
+                        Suspendisse feugiat elit euismod, cursus eros eu, pharetra leo. Mauris eget lorem velit. Vivamus
+                        tincidunt magna sed pretium volutpat. Mauris eget velit laoreet, accumsan orci pretium, egestas
+                        tortor.</p>
+                </div>
+                <div class="container">
+                    <div class="circle float-left individual-report closed" data-target="expand-box-2">
+                        <img src="/assets/icon-tool-arrow-right.svg" class="closed" alt="icon-tool-arrow-right">
+                    </div>
+                    <p class="title">Income reports</p>
+                    <p class="subtitle">Income received, Income accrued, Realised capital gains tax &amp; Unrealised
+                        capital
+                        gains tax</p>
+                    <p id="expand-box-2" class="expand-box closed">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Vivamus lacinia ante sit amet augue placerat sollicitudin non sit amet nisi. Quisque
+                        aliquet bibendum eros, a porta elit auctor sed. Curabitur posuere eleifend dignissim. Donec
+                        vitae commodo mi.
+                        Suspendisse feugiat elit euismod, cursus eros eu, pharetra leo. Mauris eget lorem velit. Vivamus
+                        tincidunt magna sed pretium volutpat. Mauris eget velit laoreet, accumsan orci pretium, egestas
+                        tortor.</p>
+                </div>
+            </section>
+
+            <footer>
+                <div>
+
+                    <span class="label-regular float-left">Powered by <img src="/assets/logo-btpanorama.svg"
+                            alt="logo-btpanorama"></span>
+                    <span class="label-regular float-right">Contact us · Terms of use · Privacy statement ·
+                        Accessibility · © 2015 BT Financial Group</span>
+                </div>
+
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

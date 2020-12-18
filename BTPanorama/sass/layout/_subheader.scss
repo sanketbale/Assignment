@@ -1,0 +1,38 @@
+.subheader {
+    margin: 0 0px 0px 50px;
+    padding: 10px 20px 9px 29px;
+    background-color: #007ba9;
+    color: #ffffff;
+    display: block;
+    height: $header-height;
+
+    .label-regular {
+       color:  #c8f1ff;
+    }
+.subheader-left{
+    float: left;
+
+}
+
+    .subheader-right {
+        float: right;
+        width: 270px;
+
+        .portfolio-value-label {
+            width: 140px;
+            height: 14px;
+            float: left;
+            line-height: 1.17;
+            letter-spacing: normal;
+            text-align: left;
+            margin-top: 10px;
+            color: #c8f1ff;
+          }
+          .portfolio-value{
+            font-size: 22px;
+            float: right;
+            color: #ffffff;
+            @include font-values('regular')
+        }
+    }
+}
