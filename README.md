@@ -1,6 +1,6 @@
 # Assignment
 Assignment
-
+## BT Panorama demo link : [BT Panorama ](https://btpanoramasanket.z22.web.core.windows.net/)
 ##  Tasks : 
 ```bash
 npm install 
