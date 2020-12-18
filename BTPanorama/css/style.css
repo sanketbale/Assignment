@@ -588,6 +588,7 @@ footer {
       border-radius: 0 0 5px 5px;
       border: solid 1px #949494;
       border-top: 0;
+      width: 185px;
       margin-top: 0px;
       position: absolute;
       z-index: 3;
@@ -595,7 +596,7 @@ footer {
       @media only screen and (device-width: 768px) {
         .reports-section .dropdown .options {
           /* For general iPad layouts */
-          width: 221px; } }
+          width: 125px; } }
       @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
         .reports-section .dropdown .options {
           /* For portrait layouts only */
