@@ -137,14 +137,34 @@
 
 .form-item {
   margin-left: 30px; }
+  @media only screen and (device-width: 768px) {
+    .form-item {
+      margin-left: 15px; } }
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .form-item {
+      margin-left: 15px; } }
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .form-item {
+      margin-left: 15px; } }
   .form-item.dropdown input {
-    width: 220px;
     height: 32px;
     padding: 0 0 0 15px;
     border-radius: 3px 0 0 3px;
     border: solid 1px #a1acb4;
     border-right: 0;
     background-color: #ffffff; }
+    @media only screen and (device-width: 768px) {
+      .form-item.dropdown input {
+        /* For general iPad layouts */
+        width: 220px; } }
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+      .form-item.dropdown input {
+        /* For portrait layouts only */
+        width: 120px; } }
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+      .form-item.dropdown input {
+        /* For landscape layouts only */
+        width: 150px; } }
   .form-item.dropdown span.add-on {
     width: 40px;
     height: 32px;
@@ -169,8 +189,7 @@
     border: solid 1px #a1acb4;
     background-color: #ffffff; }
     .form-item.date-range input.from {
-      border-left: 0;
-      border-right: 0; }
+      border-left: 0; }
     .form-item.date-range input.to {
       border-left: 0;
       border-radius: 0 3px 3px 0; }
@@ -264,6 +283,18 @@
 .column {
   float: left;
   padding: 0 10px; }
+  @media only screen and (device-width: 768px) {
+    .column {
+      /* For general iPad layouts */
+      padding: 0 10px; } }
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .column {
+      /* For portrait layouts only */
+      padding: 5px 25px; } }
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .column {
+      /* For landscape layouts only */
+      padding: 5px 19px; } }
 
 .row {
   margin: 0 -5px; }
@@ -302,6 +333,19 @@
     width: 175px;
     position: relative;
     background-image: linear-gradient(to bottom, #0c2b34, #356199); }
+    @media only screen and (device-width: 768px) {
+      .card .card-body {
+        /* For general iPad layouts */
+        width: 175px; } }
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+      .card .card-body {
+        /* For portrait layouts only */
+        width: 250px;
+        top: 140px; } }
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+      .card .card-body {
+        /* For landscape layouts only */
+        width: 175px; } }
   .card .side {
     backface-visibility: hidden;
     height: 100%; }
@@ -322,7 +366,6 @@
       position: absolute;
       bottom: 15px;
       left: 12px;
-      width: 149px;
       height: 32px;
       font-size: 14px;
       padding: 5px 23px;
@@ -330,6 +373,14 @@
       border-radius: 3px;
       border: solid 1px #007ba9;
       text-align: center; }
+      @media only screen and (device-width: 768px) {
+        .card .back .close {
+          /* For general iPad layouts */
+          width: 149px; } }
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+        .card .back .close {
+          /* For portrait layouts only */
+          width: 220px; } }
       .card .back .close img {
         padding-right: 10px;
         transform: translateY(2px); }
@@ -534,7 +585,6 @@ footer {
   .reports-section .dropdown {
     float: right; }
     .reports-section .dropdown .options {
-      width: 221px;
       border-radius: 0 0 5px 5px;
       border: solid 1px #949494;
       border-top: 0;
@@ -542,6 +592,18 @@ footer {
       position: absolute;
       z-index: 3;
       background: white; }
+      @media only screen and (device-width: 768px) {
+        .reports-section .dropdown .options {
+          /* For general iPad layouts */
+          width: 221px; } }
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+        .reports-section .dropdown .options {
+          /* For portrait layouts only */
+          width: 125px; } }
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+        .reports-section .dropdown .options {
+          /* For landscape layouts only */
+          width: 150px; } }
       .reports-section .dropdown .options .item {
         border-bottom: solid 1px #949494;
         padding: 7.5px 15px 7.5px 15px; }
@@ -556,6 +618,18 @@ footer {
   .reports-section .quick-preferences {
     height: 80px;
     background-color: #f5f5f5; }
+    @media only screen and (device-width: 768px) {
+      .reports-section .quick-preferences {
+        padding: 24px 5px 24px 0px; } }
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+      .reports-section .quick-preferences {
+        padding: 24px 5px 24px 0px;
+        height: 124px; }
+        .reports-section .quick-preferences span {
+          width: 100%; } }
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+      .reports-section .quick-preferences {
+        padding: 24px 5px 24px 0px; } }
   .reports-section .report-packs .packs {
     margin-top: 30px; }
     .reports-section .report-packs .packs .pack {
@@ -564,6 +638,18 @@ footer {
       border-radius: 3px;
       border: solid 1px #e5e5e5;
       background-color: #ffffff; }
+      @media only screen and (device-width: 768px) {
+        .reports-section .report-packs .packs .pack {
+          /* For general iPad layouts */
+          width: 176px; } }
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+        .reports-section .report-packs .packs .pack {
+          /* For portrait layouts only */
+          width: 250px; } }
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+        .reports-section .report-packs .packs .pack {
+          /* For landscape layouts only */
+          width: 176px; } }
   .reports-section .report-packs .pack-details-table {
     display: table;
     width: 100%; }
@@ -579,19 +665,32 @@ footer {
     .reports-section .report-packs .pack-details-table .table-column {
       width: 33.33%;
       float: left;
-      padding: 13px 60px 15px 15px;
+      padding: 13px 5px 15px 5px;
       border-bottom: solid 1px #e5e5e5;
       height: 62px; }
+      @media only screen and (device-width: 768px) {
+        .reports-section .report-packs .pack-details-table .table-column {
+          /* For general iPad layouts */
+          height: 90px; } }
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+        .reports-section .report-packs .pack-details-table .table-column {
+          /* For portrait layouts only */
+          height: 90px; } }
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+        .reports-section .report-packs .pack-details-table .table-column {
+          /* For landscape layouts only */
+          height: 90px;
+          padding-right: 85px; } }
       .reports-section .report-packs .pack-details-table .table-column .form-item {
         margin-left: 0 !important;
         float: left; }
       .reports-section .report-packs .pack-details-table .table-column > span {
         display: block;
-        padding: 10px 0; }
+        padding: 10px 0;
+        font-weight: bold; }
     .reports-section .report-packs .pack-details-table .table-row {
       height: 12px;
       font-size: 16px;
-      font-weight: bold;
       text-align: left;
       color: #48525a; }
   .reports-section .individual-reports {

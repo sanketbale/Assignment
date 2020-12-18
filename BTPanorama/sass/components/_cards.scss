@@ -1,6 +1,24 @@
 .column {
   float: left;
   padding: 0 10px;
+
+  @media only screen and (device-width: 768px) {
+    /* For general iPad layouts */
+    padding: 0 10px;
+
+  }
+  
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    /* For portrait layouts only */
+    padding: 5px 25px;
+
+  }
+  
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    /* For landscape layouts only */
+    padding:5px 19px;
+
+  }
 }
 
 .row {
@@ -51,6 +69,25 @@
     position: relative;
     background-image: linear-gradient(to bottom, #0c2b34, #356199);
     @extend .label-regular;
+
+    @media only screen and (device-width: 768px) {
+      /* For general iPad layouts */
+      width: 175px;
+
+    }
+    
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+      /* For portrait layouts only */
+      width: 250px;
+      top: 140px;
+
+    }
+    
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+      /* For landscape layouts only */
+      width: 175px;
+
+    }
   }
 
   .side {
@@ -79,7 +116,6 @@
       position: absolute;
       bottom: 15px;
       left: 12px;
-      width: 149px;
       height: 32px;
       font-size: 14px;
       padding: 5px 23px;
@@ -87,6 +123,18 @@
       border-radius: 3px;
       border: solid 1px #007ba9;
       text-align: center;
+
+      @media only screen and (device-width: 768px) {
+        /* For general iPad layouts */
+        width: 149px;    
+      }
+      
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+        /* For portrait layouts only */
+        width: 220px;    
+      }
+      
+
       
       img{
         padding-right: 10px;

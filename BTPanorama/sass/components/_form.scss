@@ -1,16 +1,47 @@
 .form-item {
     margin-left: 30px;
 
+    @media only screen and (device-width: 768px) {
+        margin-left: 15px;
+    }
+
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+        margin-left: 15px;
+    }
+
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        margin-left: 15px;
+    }
+
     &.dropdown {
         input {
-            width: 220px;
             height: 32px;
             padding: 0 0 0 15px;
             border-radius: 3px 0 0 3px;
             border: solid 1px #a1acb4;
             border-right: 0;
             background-color: #ffffff;
+
+            @media only screen and (device-width: 768px) {
+                /* For general iPad layouts */
+                width: 220px;
+
+            }
+
+            @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+                /* For portrait layouts only */
+                width: 120px;
+
+            }
+
+            @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+                /* For landscape layouts only */
+                width: 150px;
+
+            }
         }
+
+
 
         span {
             &.add-on {
@@ -53,7 +84,6 @@
 
             &.from {
                 border-left: 0;
-                border-right: 0;
             }
 
             &.to {
@@ -151,7 +181,8 @@
 
         &:hover input~.checkmark {
             border: solid 1px #0079a2;
-            background-color: #00afd7;        }
+            background-color: #00afd7;
+        }
 
         input:checked~.checkmark {
             border: solid 1px #0079a2;
