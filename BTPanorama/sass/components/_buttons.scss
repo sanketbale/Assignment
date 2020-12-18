@@ -1,3 +1,22 @@
+
+.btn-primary {
+  width: 190px;
+  height: 60px;
+  margin: 21px 6px 0 0;
+  padding: 22px 45px 17px;
+  border-radius: 3px;
+  background-color: #007ead;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+
 #hamburger-button {
     width: 17px;
     height: 32px;

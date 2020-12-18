@@ -7,10 +7,10 @@ $(document).ready(function () {
 		$(this).toggleClass('open');
 	});
 
-	$('.pack-details-table').toggle();
+	$('.pack-details').toggle();
 
 	$('.card.pack').click(function () {
-		$('.pack-details-table').toggle();
+		$('.pack-details').toggle();
 		if (!$(this).hasClass('flip')) {
 			$('.card.pack').removeClass('flip');
 			$(this).toggleClass('flip');
