@@ -4,7 +4,7 @@ $(document).ready(function () {
 	});
 
 	$('.options').toggle();
-	
+
 	$('.add-on img').click(function () {
 		$(this).toggleClass('open');
 		var id =  $(this).attr('data-target');
@@ -50,4 +50,14 @@ $(document).ready(function () {
 		  }
 	});
 
+	$('.form-item.date-range span img').daterangepicker({
+		"showDropdowns": true,
+		"autoApply": true,
+		"showCustomRangeLabel": false,
+		"startDate": "12/08/2020",
+		"endDate": "12/18/2020",
+		"drops": "auto"
+	}, function(start, end, label) {
+	  console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+	});
 });

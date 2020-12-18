@@ -8,6 +8,9 @@
   margin: 0;
   padding: 0; }
 
+.daterangepicker td.active, .daterangepicker td.active:hover {
+  background-color: #00afd7; }
+
 @font-face {
   font-family: "Helvetica Neue LT Thin";
   src: url(/fonts/helvetica_neue_lt_thin.eot?#iefix);
@@ -59,7 +62,7 @@
 .float-right {
   float: right; }
 
-.btn-primary {
+.app-btn-primary {
   width: 190px;
   height: 60px;
   margin: 21px 6px 0 0;
