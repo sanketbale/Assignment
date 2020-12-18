@@ -535,8 +535,10 @@ footer {
       border-radius: 0 0 5px 5px;
       border: solid 1px #949494;
       border-top: 0;
-      margin-top: -1px;
-      position: absolute; }
+      margin-top: 0px;
+      position: absolute;
+      z-index: 3;
+      background: white; }
       .reports-section .dropdown .options .item {
         border-bottom: solid 1px #949494;
         padding: 7.5px 15px 7.5px 15px; }

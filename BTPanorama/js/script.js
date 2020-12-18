@@ -3,8 +3,12 @@ $(document).ready(function () {
 		$(this).toggleClass('open');
 	});
 
+	$('.options').toggle();
+	
 	$('.add-on img').click(function () {
 		$(this).toggleClass('open');
+		var id =  $(this).attr('data-target');
+		$('#'+id).toggle();
 	});
 
 	$('.pack-details').toggle();

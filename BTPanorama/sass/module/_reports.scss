@@ -33,8 +33,10 @@
             border-radius: 0 0 5px 5px;
             border: solid 1px #949494;
             border-top: 0;
-            margin-top: -1px;
+            margin-top: 0px;
             position: absolute;
+            z-index: 3;
+            background: white;
 
             .item {
                 border-bottom: solid 1px #949494;
